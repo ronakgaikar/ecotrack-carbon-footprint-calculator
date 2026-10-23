@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- Leaf emoji favicon via SVG data URI -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="EcoTrack – Calculate your carbon footprint and get AI-powered recommendations to live more sustainably." />
+
+  <!-- Google Fonts: Open Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN with custom editorial environmental palette -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'peach': '#F2CDC4',
+            'lavender': '#9387AB',
+            'forest': '#294B39',
+            'lime': '#A4C52A',
+            'offwhite': '#FAF9F6',
+            'charcoal': '#41404A',
+          },
+          fontFamily: {
+            sans: ['"Open Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <title>EcoTrack – Climate & Carbon Footprint Platform</title>
+
+  <style>
+    /* Editorial typography & soft environmental base */
+    * {
+      font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #FAF9F6;
+      color: #41404A;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    #root {
+      min-height: 100vh;
+      background-color: #FAF9F6;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <!-- Vite injects the bundled script here -->
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>

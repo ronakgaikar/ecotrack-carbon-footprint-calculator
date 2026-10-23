@@ -1,0 +1,25 @@
+{
+  "name": "ecotrack-ai-carbon-footprint-calculator",
+  "version": "1.0.0",
+  "description": "EcoTrack – AI-Powered Carbon Footprint Calculator & SDG Assessment Platform",
+  "scripts": {
+    "build": "npm --prefix client install && npm --prefix client run build && npm --prefix server install",
+    "start": "node server/server.js",
+    "dev": "concurrently \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "client": "npm --prefix client run dev",
+    "server": "npm --prefix server run dev"
+  },
+  "keywords": [
+    "carbon-footprint",
+    "circular-economy",
+    "sustainability",
+    "sdg",
+    "greenhouse-gas",
+    "gemini-ai",
+    "react",
+    "vite",
+    "nodejs"
+  ],
+  "author": "EcoTrack Team",
+  "license": "MIT"
+}
